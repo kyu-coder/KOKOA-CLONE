@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  background-color: teal;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container__dot {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  animation: superSexyRotation 1s ease-in-out infinite;
+}
+
+.container__bar {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.bar {
+  width: 20px;
+  height: 100px;
+  background-color: white;
+}
+
+.bar:nth-child(1) {
+  animation: superSexyBigAndSmall 1s infinite;
+  animation-delay: 0s;
+}
+.bar:nth-child(2) {
+  animation: superSexyBigAndSmall 1s infinite;
+  animation-delay: 0.05s;
+}
+.bar:nth-child(3) {
+  animation: superSexyBigAndSmall 1s infinite;
+  animation-delay: 0.1s;
+}
+.bar:nth-child(4) {
+  animation: superSexyBigAndSmall 1s infinite;
+  animation-delay: 0.15s;
+}
+.bar:nth-child(5) {
+  animation: superSexyBigAndSmall 1s infinite;
+  animation-delay: 0.2s;
+}
+
+@keyframes superSexyRotation {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+
+@keyframes superSexyBigAndSmall {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
