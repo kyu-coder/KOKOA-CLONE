@@ -1,0 +1,168 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+}
+
+.main-container {
+  width: 400px;
+  height: 950px;
+  border: 1px solid black;
+  background-color: teal;
+  border-radius: 10px;
+  border: none;
+}
+
+.background-top {
+  height: 15%;
+  background-color: tomato;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 30px;
+}
+
+.library {
+  font-size: 25px;
+}
+
+i {
+  margin: 0 10px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  height: 50px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px gray;
+  position: relative;
+  top: -25px;
+  left: 25px;
+  background-color: white;
+}
+
+.search {
+  width: 60%;
+  height: 60%;
+  margin-left: 10px;
+  border: none;
+}
+
+.search::placeholder {
+  opacity: 50%;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.fa-search {
+  opacity: 30%;
+}
+
+.bookOfTheDay {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 25px;
+}
+
+.image-detail-container {
+  display: flex;
+}
+
+.book-image {
+  width: 40%;
+}
+.book-info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: space-evenly;
+}
+
+.subtitle {
+  opacity: 70%;
+}
+
+.fa-star {
+  margin: 0;
+}
+
+.buttons-firstRow {
+  display: flex;
+}
+
+.gray-button {
+  margin-right: 10px;
+  padding: 2px 10px;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.buttons-secondRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.black-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.top-adventures {
+  margin: 0px 25px;
+}
+
+.top-adventures__books {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.top-adventures__books__book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.small {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.popular-authors {
+  margin: 0px 25px;
+}
+
+#ggamang {
+  border-radius: 20px;
+}
