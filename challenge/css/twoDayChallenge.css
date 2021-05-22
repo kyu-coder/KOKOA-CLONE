@@ -54,6 +54,7 @@ body {
 
 .info-with-picture__cover-pic {
   border-radius: 50%;
+  box-shadow: 5px 5px 20px rgb(239, 221, 197);
 }
 
 .info-with-picture__main-info {
@@ -100,8 +101,6 @@ body {
 .playlist {
   margin: 20px 20px;
   box-sizing: border-box;
-  overflow-y: scroll;
-  height: 350px;
 }
 
 .song-display {
@@ -109,7 +108,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 10px 20px;
 }
 
@@ -118,6 +116,10 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 1.5;
+}
+
+.song-display > i {
+  opacity: 40%;
 }
 
 .song-display__info-container .artist {
@@ -145,7 +147,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0px 25px;
-  background-color: rgba(0, 0, 0, 0.932);
+  background-color: rgba(0, 0, 0, 0.705);
   border-radius: 50px;
   position: absolute;
   bottom: 15px;
@@ -166,7 +168,111 @@ body {
 .navigation-buttons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-right: 30px;
   color: white;
   width: 30%;
+}
+
+.empty {
+  height: 75px;
+}
+
+.info-with-picture__wild-flower {
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgb(213, 210, 193);
+}
+
+.info-with-picture-second-screen {
+  margin: 20px 20px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-with-picture-second-screen img {
+  margin: 60px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-container__title {
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.info-container__artist {
+  opacity: 40%;
+}
+
+.time {
+  display: flex;
+  margin: 0px 25px;
+  justify-content: space-between;
+  opacity: 40%;
+}
+
+.song-progress {
+  display: flex;
+  margin: 5px 25px;
+  align-items: center;
+  position: relative;
+}
+
+.song-progress__played {
+  height: 4px;
+  width: 20%;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.song-progress__current {
+  height: 7px;
+  width: 7px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 58px;
+}
+
+.song-progress__left {
+  height: 3px;
+  width: 80%;
+  background-color: black;
+  border-radius: 3px;
+  opacity: 20%;
+}
+
+.second-screen {
+  color: black;
+  width: 80%;
+  margin: 100px 35px;
+  font-size: 20px;
+}
+
+.fa-exchange-alt,
+.fa-random {
+  opacity: 30%;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px black;
+}
+
+.fa-play {
+  color: white;
 }
