@@ -5,6 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(199, 194, 194);
+  font-family: "Nanum Pen Script", cursive;
 }
 
 .container {
@@ -17,10 +18,12 @@ body {
 
 .main-screen {
   height: 800px;
-  width: 300px;
+  width: 350px;
   background-color: white;
   border-radius: 20px;
   box-sizing: border-box;
+
+  position: relative;
 }
 
 .navigation-bar {
@@ -92,4 +95,78 @@ body {
 
 .ellipse:last-child span {
   opacity: 40%;
+}
+
+.playlist {
+  margin: 20px 20px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  height: 350px;
+}
+
+.song-display {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 20px;
+}
+
+.song-display__info-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.song-display__info-container .artist {
+  opacity: 40%;
+  font-size: 15px;
+}
+
+.song-display__info-container .title {
+  font-weight: 700;
+}
+
+.song-display > img {
+  border-radius: 10px;
+}
+
+.song-display:nth-child(2) {
+  box-shadow: 0px 0px 20px gray;
+  border-radius: 10px;
+}
+
+.control-box {
+  height: 70px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 25px;
+  background-color: rgba(0, 0, 0, 0.932);
+  border-radius: 50px;
+  position: absolute;
+  bottom: 15px;
+}
+
+.control-box__info-container {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+}
+
+.control-box__info-container .artist {
+  opacity: 40%;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+  color: white;
+  width: 30%;
 }
