@@ -7,10 +7,10 @@ body {
 }
 
 h1 {
-  position: fixed;
+  position: absolute;
   align-self: flex-start;
   font-size: 50px;
-  margin-top: 150px;
+  margin-top: -100px;
 }
 
 .background_color {
